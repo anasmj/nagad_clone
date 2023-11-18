@@ -60,11 +60,11 @@ class _HomeBodyState extends State<HomeBody> {
         physics: const BouncingScrollPhysics(),
         child: Column(
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  const Expanded(
+                  Expanded(
                       child: Padding(
                     padding: EdgeInsets.only(left: 12.0),
                     child: Text('Services'),
@@ -104,10 +104,10 @@ class _HomeBodyState extends State<HomeBody> {
                 }),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(8.0),
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                       child: Padding(
                     padding: EdgeInsets.only(left: 12.0),
@@ -118,8 +118,8 @@ class _HomeBodyState extends State<HomeBody> {
             ),
             Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(12.0, 0, 12.0, 0),
-              margin: EdgeInsets.only(bottom: 0.0),
+              padding: const EdgeInsets.fromLTRB(12.0, 0, 12.0, 0),
+              margin: const EdgeInsets.only(bottom: 0.0),
               child: GridView.count(
                 // Create a grid with 2 columns. If you change the scrollDirection to
                 // horizontal, this produces 2 rows.
@@ -146,11 +146,11 @@ class _HomeBodyState extends State<HomeBody> {
               ),
             ),
             _buildImageSlider(),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  const Expanded(
+                  Expanded(
                       child: Padding(
                     padding: EdgeInsets.only(left: 12.0),
                     child: Text('Others'),
